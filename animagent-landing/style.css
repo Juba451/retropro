@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);
+}
+
+body {
+  font-family: 'Press Start 2P', 'Comic Sans MS', cursive, sans-serif;
+  color: #222;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 700px;
+  height: 500px;
+  margin: 30px auto;
+  background: #fffbe7;
+  border: 4px ridge #ff00cc;
+  box-shadow: 0 0 40px #00c3ff, 0 0 10px #ff00cc inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.logo-gif {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  border: 2px solid #ff00cc;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ff00cc;
+  text-shadow: 2px 2px 0 #00c3ff, 4px 4px 0 #ffff1c;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1em;
+  color: #00c3ff;
+  margin-bottom: 10px;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.nav-btn {
+  font-family: 'Press Start 2P', 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(90deg, #ff00cc 0%, #00c3ff 100%);
+  color: #fff;
+  border: 2px outset #ffff1c;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #222;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.nav-btn:hover {
+  background: linear-gradient(90deg, #00c3ff 0%, #ff00cc 100%);
+  transform: scale(1.1);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-gif {
+  width: 180px;
+  height: 120px;
+  border: 2px solid #00c3ff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.main-text {
+  font-size: 1.1em;
+  color: #ff00cc;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 0 #ffff1c;
+}
+
+.blink {
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.visitor-counter {
+  font-size: 0.9em;
+  color: #222;
+  background: #ffff1c;
+  border: 2px inset #00c3ff;
+  border-radius: 4px;
+  padding: 4px 12px;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+.guestbook-btn {
+  font-family: 'Press Start 2P', 'Comic Sans MS', cursive, sans-serif;
+  background: #00c3ff;
+  color: #fff;
+  border: 2px outset #ff00cc;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #222;
+  margin-bottom: 10px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.guestbook-btn:hover {
+  background: #ff00cc;
+  color: #ffff1c;
+  transform: scale(1.1);
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  color: #222;
+  background: #ff00cc;
+  border-top: 2px solid #2e5e6d;
+  padding: 6px 0;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 -2px 8px #00c3ff;
+} 
